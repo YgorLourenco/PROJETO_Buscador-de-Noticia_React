@@ -17,6 +17,7 @@ function App() {
       const noticias = await resposta.json()
 
       guardarNoticias(noticias.articles)
+      // console.log(noticias.articles)
     }
     consultarAPI()
   }, [categoria]) // Vai usar esse State para mudar as informações da API
